@@ -9,7 +9,6 @@ License:        Boost
 URL:            http://www.boost.org/
 Source0:        boost_1_55_0.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires:  bzip2-devel, python-devel, python-libs
 Requires: bzip2, python-libs
 %description
 Boost provides free peer-reviewed portable C++ source libraries.  The
