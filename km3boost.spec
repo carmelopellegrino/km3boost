@@ -1,13 +1,13 @@
 # $Id$
 Name:           km3boost
-Version:        1.55
+Version:        1.56
 Release:        1
 Summary:        The Boost C++ headers and shared development libraries
 
 Group:          System Environment/Libraries
 License:        Boost
 URL:            http://www.boost.org/
-Source0:        boost_1_55_0.tar.bz2
+Source0:        boost_1_56_0.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: bzip2, python-libs
 %description
@@ -20,7 +20,7 @@ libraries have already been proposed for inclusion in the C++
 Standards Committee's upcoming C++ Standard Library Technical Report.)
 
 %prep
-%setup -q -n boost_1_55_0
+%setup -q -n boost_1_56_0
 
 %build
 BOOST_ROOT=`pwd`
