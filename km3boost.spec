@@ -26,7 +26,7 @@ Standards Committee's upcoming C++ Standard Library Technical Report.)
 %build
 BOOST_ROOT=`pwd`
 export BOOST_ROOT
-./bootstrap.sh --prefix=$RPM_BUILD_ROOT/usr/local --with-toolset=gcc --with-icu --with-libraries=thread,chrono,random,program_options,thread,atomic
+./bootstrap.sh --prefix=$RPM_BUILD_ROOT/usr/local --with-toolset=gcc --with-icu --with-libraries=thread,chrono,random,program_options,thread,atomic,timer
 
 %install
 rm -rf $RPM_BUILD_ROOT
