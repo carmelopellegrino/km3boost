@@ -45,3 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/local/include/boost/*
 
 %changelog
+* Tue Jun 16 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-2
+- boost::timer library added
+* Fri Apr 3 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-1
+- initial Release
