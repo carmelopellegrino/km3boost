@@ -1,7 +1,7 @@
 # $Id$
 Name:           km3boost
 Version:        1.55
-Release:        3
+Release:        4
 Summary:        The Boost C++ headers and shared development libraries
 
 Group:          System Environment/Libraries
