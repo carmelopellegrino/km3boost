@@ -40,12 +40,8 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(644,root,root,-)
+%defattr(-,root,root,-)
 /usr/local/lib/libboost_*
-/usr/local/include/boost/*
-
-%dir
-%defattr(755,root,root,-)
 /usr/local/include/boost/*
 
 %changelog
