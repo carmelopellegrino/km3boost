@@ -1,7 +1,7 @@
 # $Id$
 Name:           km3boost
 Version:        1.55
-Release:        2
+Release:        3
 Summary:        The Boost C++ headers and shared development libraries
 
 Group:          System Environment/Libraries
@@ -44,7 +44,13 @@ rm -rf $RPM_BUILD_ROOT
 /usr/local/lib/libboost_*
 /usr/local/include/boost/*
 
+%dir
+%defattr(755,root,root,-)
+/usr/local/include/boost/*
+
 %changelog
+* Tue Nov 17 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-3
+- Permission of directories corrected
 * Tue Jun 16 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-2
 - boost::timer library added
 * Fri Apr 3 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-1
