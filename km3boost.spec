@@ -45,8 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 /usr/local/include/boost/*
 
 %changelog
+* Tue Nov 17 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-4
+- Permissions of files corrected
 * Tue Nov 17 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-3
-- Permission of directories corrected
+- Permissions of directories corrected
 * Tue Jun 16 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-2
 - boost::timer library added
 * Fri Apr 3 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-1
