@@ -46,3 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/local/include/boost/*
 
 %changelog
+* Tue Jun 16 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 0.2
+- Timer library added.
+* Wed Oct 29 2014 Carmelo Pellegrino <cpellegrino@km3net.de> 0.1
+- First release with chrono, random, program_options, thread and atomic.
