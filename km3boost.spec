@@ -1,7 +1,7 @@
 # $Id$
 Name:           km3boost
 Version:        1.55
-Release:        2
+Release:        3
 Summary:        The Boost C++ headers and shared development libraries
 
 Group:          System Environment/Libraries
@@ -26,7 +26,7 @@ Standards Committee's upcoming C++ Standard Library Technical Report.)
 %build
 BOOST_ROOT=`pwd`
 export BOOST_ROOT
-./bootstrap.sh --prefix=$RPM_BUILD_ROOT/usr/local --with-toolset=gcc --with-icu --with-libraries=chrono,random,program_options,thread,atomic,timer
+./bootstrap.sh --prefix=$RPM_BUILD_ROOT/usr/local --with-toolset=gcc --with-icu --with-libraries=chrono,random,program_options,thread,atomic,timer,serialization
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -46,6 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 /usr/local/include/boost/*
 
 %changelog
+* Fri Aug 19 2016 Carmelo Pellegrino <cpellegrino@km3net.de> 0.3
+- Serialization library added.
 * Tue Jun 16 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 0.2
 - Timer library added.
 * Wed Oct 29 2014 Carmelo Pellegrino <cpellegrino@km3net.de> 0.1
