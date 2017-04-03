@@ -1,7 +1,7 @@
 # $Id$
 Name:           km3boost
 Version:        1.55
-Release:        5
+Release:        6
 Summary:        The Boost C++ headers and shared development libraries
 
 Group:          System Environment/Libraries
@@ -25,7 +25,7 @@ Standards Committee's upcoming C++ Standard Library Technical Report.)
 %build
 BOOST_ROOT=`pwd`
 export BOOST_ROOT
-./bootstrap.sh --prefix=$RPM_BUILD_ROOT/usr/local --with-toolset=gcc --with-icu --with-libraries=thread,chrono,random,program_options,thread,atomic,timer,regex
+./bootstrap.sh --prefix=$RPM_BUILD_ROOT/usr/local --with-toolset=gcc --with-icu --with-libraries=chrono,random,program_options,thread,atomic,timer,serialization,regex
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,6 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Mon Apr 3 2017 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-5
 - boost::regex library added
+* Fri Aug 19 2016 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-5
+- boost::serialization added
 * Tue Nov 17 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-4
 - Permissions of files corrected
 * Tue Nov 17 2015 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-3
