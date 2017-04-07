@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/local/include/boost/*
 
 %changelog
-* Mon Apr 3 2017 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-5
+* Mon Apr 3 2017 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-6
 - boost::regex library added
 * Fri Aug 19 2016 Carmelo Pellegrino <cpellegrino@km3net.de> 1.55-5
 - boost::serialization added
